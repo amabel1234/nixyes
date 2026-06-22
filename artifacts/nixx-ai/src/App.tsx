@@ -18,7 +18,7 @@ function Spinner() {
   return (
     <div style={{
       minHeight: "100dvh", display: "flex", alignItems: "center",
-      justifyContent: "center", background: "hsl(248, 30%, 6%)",
+      justifyContent: "center", background: "#ffffff",
       flexDirection: "column", gap: "1rem",
     }}>
       <div style={{
@@ -28,7 +28,7 @@ function Spinner() {
         animation: "spin .7s linear infinite",
       }} />
       <style>{"@keyframes spin{to{transform:rotate(360deg)}}"}</style>
-      <p style={{ color: "rgba(168,85,247,0.7)", fontSize: 14, margin: 0 }}>Memuat...</p>
+      <p style={{ color: "#7c3aed", fontSize: 14, margin: 0 }}>Memuat...</p>
     </div>
   );
 }
