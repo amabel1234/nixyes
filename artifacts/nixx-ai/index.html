@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Nixx AI</title>
+    <meta name="description" content="Nixx AI — Asisten AI Pintar, 26 Model, Gratis Selamanya" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Nixx AI" />
+    <meta property="og:description" content="Nixx AI — Asisten AI Pintar, 26 Model, Gratis Selamanya" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nixx AI" />
+    <meta name="twitter:description" content="Nixx AI — Asisten AI Pintar, 26 Model, Gratis Selamanya" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Preconnect Clerk domains agar modal login load instan -->
+    <link rel="preconnect" href="https://peaceful-cat-6.clerk.accounts.dev" crossorigin />
+    <link rel="dns-prefetch" href="https://peaceful-cat-6.clerk.accounts.dev" />
+    <link rel="preconnect" href="https://clerk.peaceful-cat-6.accounts.dev" crossorigin />
+    <link rel="dns-prefetch" href="https://clerk.peaceful-cat-6.accounts.dev" />
+    <link rel="preconnect" href="https://accounts.google.com" crossorigin />
+    <link rel="dns-prefetch" href="https://accounts.google.com" />
+
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Instant loading skeleton agar tidak blank saat JS belum siap -->
+    <style>
+      *,*::before,*::after{box-sizing:border-box}
+      html,body{margin:0;padding:0;background:#0b0a1a;color:#f8f8f8;font-family:'Inter',sans-serif}
+      #root:empty::after{
+        content:'';display:block;width:48px;height:48px;border-radius:50%;
+        border:3px solid rgba(168,85,247,0.2);border-top-color:#a855f7;
+        animation:spin .7s linear infinite;
+        position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+      }
+      @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
