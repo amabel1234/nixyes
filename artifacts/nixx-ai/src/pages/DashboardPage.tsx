@@ -283,7 +283,7 @@ export default function DashboardPage() {
   const [editId, setEditId] = useState<string | null>(null);
   const [editTxt, setEditTxt] = useState("");
   const [theme, setTheme] = useState<"dark" | "light">(() =>
-    (localStorage.getItem("nx-theme") as "dark" | "light") || "dark"
+    (localStorage.getItem("nx-theme") as "dark" | "light") || "light"
   );
   const [input, setInput] = useState("");
   const [pendingFile, setPendingFile] = useState<{
